@@ -76,11 +76,11 @@ function populateTable(jsonT) {
   //console.log(myObj);
   //console.log(myObj);
   var table = document.getElementById("data_table");
-  console.log("fgfvfsaf"+jsonTest[1]);
+
   for (x in myObj) {
-    var title = jsonTest[x].title;
-    var genre = jsonTest[x].genre;
-    var rating = jsonTest[x].rating;
+    var title = myObj[x].title;
+    var genre = myObj[x].genre;
+    var rating = myObj[x].rating;
     var table_len = (table.rows.length) - 1;
     var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='title_row" + table_len + "'>" + title + "</td><td id='genre_row" + table_len + "'>" + genre + "</td><td id='rating_row" + table_len + "'>" + rating + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
 
