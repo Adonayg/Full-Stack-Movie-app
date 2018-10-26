@@ -76,6 +76,7 @@ function populateTable(jsonT) {
   //console.log(myObj);
   //console.log(myObj);
   var table = document.getElementById("data_table");
+  console.log(jsonTest[0]);
   for (x in myObj) {
     var title = jsonTest[x].title;
     var genre = jsonTest[x].genre;
