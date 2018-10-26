@@ -54,5 +54,5 @@ function getHttp(url) {
 }
 
 function listAllMovies() {
- getHttp('http://localhost:8081/Movie/api/account/getAllAccounts')
+ getHttp('http://localhost:8081/Movie/api/movie/getAllMovies')
 }
