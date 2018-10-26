@@ -66,8 +66,8 @@ console.log("listing movies")
 
 function populateTable(jsonT) {
   console.log("1");
-  //var jsonTest = [{"id":1,"title":"Movie1","genre":"genre1","rating":"1234"},{"id":2,"title":"Movie2","genre":"genre2","rating":"1235"},{"id":3,"title":"Movie3","genre":"genre3","rating":"1236"}];
-  
+  var test = [{"id":1,"title":"Movie1","genre":"genre1","rating":"1234"},{"id":2,"title":"Movie2","genre":"genre2","rating":"1235"},{"id":3,"title":"Movie3","genre":"genre3","rating":"1236"}];
+  console.log("test"+test);
   var jsonTest = jsonT;
   console.log("2");
   //var myObj;
