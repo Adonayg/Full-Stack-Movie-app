@@ -29,7 +29,14 @@ function save_row(no) {
 }
 
 function delete_row(no) {
+  var id = document.getElementById("id").value;
+
+  var x = new XMLHttpRequest();
+  var url = "http://localhost:8081/Movie/api/movie/deleteAccount/"+id;
+  x.open("DELETE", url);
+  x.send();
   document.getElementById("row" + no + "").outerHTML = "";
+  
 }
 
 function add_row() {
