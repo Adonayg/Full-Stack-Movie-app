@@ -45,3 +45,14 @@ function add_row() {
     document.getElementById("lname").value = "";
     document.getElementById("anum").value = "";
 }
+
+function getHttp(url) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "GET", url, false ); // false for synchronous request
+  xmlHttp.send( null );
+  document.getElementById("output").innerHTML =  xmlHttp.responseText;
+}
+
+function listAllMovies() {
+ getHttp('http://localhost:8080/Movie/api/account/getAllAccounts')
+}
