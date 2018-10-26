@@ -51,13 +51,17 @@ function getHttp(url) {
   xmlHttp.open( "GET", url, false ); // false for synchronous request
   xmlHttp.send( null );
   //document.getElementById("output").innerHTML =  xmlHttp.responseText;
+  console.log(xmlHttp.responseText);
+  console.log("getting http");
+
   return xmlHttp.responseText;
 
 }
 
 function listAllMovies() {
-
+console.log("listing movies")
  populateTable(getHttp('http://localhost:8081/Movie/api/movie/getAllMovies'));
+
 }
 
 function populateTable(jsonT) {
@@ -65,11 +69,11 @@ function populateTable(jsonT) {
   //var jsonTest = [{"id":1,"title":"Movie1","genre":"genre1","rating":"1234"},{"id":2,"title":"Movie2","genre":"genre2","rating":"1235"},{"id":3,"title":"Movie3","genre":"genre3","rating":"1236"}];
   var jsonTest = jsonT;
   console.log("2");
-  var myObj;
+  //var myObj;
   console.log(jsonTest);
   // myObj = JSON.parse(jsonTest[0]);
-  console.log(myObj);
-  console.log(myObj);
+  //console.log(myObj);
+  //console.log(myObj);
   var table = document.getElementById("data_table");
   for (x in jsonTest) {
     var title = jsonTest[x].title;
