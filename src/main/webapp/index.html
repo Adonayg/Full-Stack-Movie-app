@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=hh, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account App</title>
+    <script type="text/javascript" src="table_script.js"></script>
 </head>
+
 <body>
-  <h1>Movie app</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
-  <br>
-  <h1>Movies</h1>
+    <center>
+        <h1>Account App</h1>
+        <h4>Full stack application</h4>
+    </center>
+    <br>
+    <br>
+
+    <div align="center" id="wrapper">
+        <h4>Your Accounts</h4>
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Account Number</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="fname"></td>
+                <td><input type="text" id="lname"></td>
+                <td><input type="text" id="anum"></td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+            </tr>
+
+        </table>
+
+        <br>
+        <a href="addAccount.html"><button>Add Account</button></a>
+    </div>
+
 </body>
+
 </html>
