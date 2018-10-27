@@ -18,7 +18,7 @@
       <profile>
         <id>deploy</id>
           <build>
-            <directory>C:\LocalInstall\Editors\eclipse\wildfly-10.1.0.Final\standalone\deployments</directory>
+            <directory>/home/adonay/wildfly/standalone/deployments</directory>
           </build>
       </profile>
 
